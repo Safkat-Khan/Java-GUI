@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Login_Page extends JFrame implements ActionListener {
@@ -30,24 +31,30 @@ public class Login_Page extends JFrame implements ActionListener {
 
         tf1 = new JTextField();
         tf1.setBounds(150, 50, 150, 20);
+        tf1.setBackground(Color.lightGray);
 
         pf1 = new JPasswordField();
         pf1.setBounds(150, 80, 150, 20);
+        pf1.setBackground(Color.lightGray);
 
         lgbtn = new JButton("Login");
         lgbtn.setBounds(45, 140, 130, 60);
+        lgbtn.setBackground(Color.orange);
         lgbtn.addActionListener(this);
 
         ftbtn = new JButton("Forget Pass");
         ftbtn.setBounds(200, 140, 130, 60);
+        ftbtn.setBackground(Color.orange);
         ftbtn.addActionListener(this);
 
         sgbtn = new JButton("SignUp");
         sgbtn.setBounds(45, 240, 130, 60);
+        sgbtn.setBackground(Color.orange);
         sgbtn.addActionListener(this);
 
         exbtn = new JButton("Exit");
         exbtn.setBounds(200, 240, 130, 60);
+        exbtn.setBackground(Color.orange);
         exbtn.addActionListener(this);
 
         img = new ImageIcon("user.png");
@@ -70,6 +77,7 @@ public class Login_Page extends JFrame implements ActionListener {
         frame.add(sgbtn);
         frame.add(exbtn);
         frame.setSize(400, 400);
+        frame.setBackground(Color.orange);
         frame.setLayout(null);
         frame.setVisible(true);
     }
