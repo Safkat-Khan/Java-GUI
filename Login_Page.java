@@ -6,6 +6,9 @@ public class Login_Page extends JFrame implements ActionListener {
 
     JFrame frame;
 
+    ImageIcon img;
+    JLabel imgLabel1,imgLabel2;
+
     JLabel label1;
     JLabel label2;
 
@@ -47,6 +50,17 @@ public class Login_Page extends JFrame implements ActionListener {
         exbtn.setBounds(200, 240, 130, 60);
         exbtn.addActionListener(this);
 
+        img = new ImageIcon("user.png");
+		imgLabel1 = new JLabel(img);
+		imgLabel1.setBounds(3, 11, 100, 100);
+
+        img = new ImageIcon("lock.png");
+		imgLabel2 = new JLabel(img);
+		imgLabel2.setBounds(3, 40, 100, 100);
+
+
+        frame.add(imgLabel1);
+        frame.add(imgLabel2); 
         frame.add(label1);
         frame.add(label2);
         frame.add(tf1);
