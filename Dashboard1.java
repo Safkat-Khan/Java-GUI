@@ -16,15 +16,11 @@ public class Dashboard1 extends JFrame {
         combo = new JComboBox(items);
         combo.setBounds(135, 20, 100, 30);
 
-       // img = new ImageIcon("-------");
-		//imgLable = new JLabel(img);
-		//imgLable.setBounds(300, 200, 100,100);
-		
+
 
         f.add(checkBox1);
         f.add(checkBox2);
         f.add(combo);
-        //f.add(imgLable);
         f.setSize(400, 400);
         f.setLayout(null);
         f.setVisible(true);
