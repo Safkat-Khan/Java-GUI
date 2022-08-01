@@ -77,6 +77,7 @@ public class Dashboard1 extends JFrame {
         f.setSize(500, 500);
         f.setLayout(null);
         f.setVisible(true);
+        f.setBounds(400,  200, 700, 500);
 
     }
 }

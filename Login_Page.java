@@ -24,46 +24,46 @@ public class Login_Page extends JFrame implements ActionListener {
     public Login_Page() {
         frame = new JFrame("LoginPage");
         label1 = new JLabel("Username :");
-        label1.setBounds(70, 50, 150, 20);
+        label1.setBounds(190, 50, 150, 20);
 
         label2 = new JLabel("Password :");
-        label2.setBounds(70, 80, 150, 20);
+        label2.setBounds(190, 80, 150, 20);
 
         tf1 = new JTextField();
-        tf1.setBounds(150, 50, 150, 20);
+        tf1.setBounds(280, 50, 150, 20);
         tf1.setBackground(Color.lightGray);
 
         pf1 = new JPasswordField();
-        pf1.setBounds(150, 80, 150, 20);
+        pf1.setBounds(280, 80, 150, 20);
         pf1.setBackground(Color.lightGray);
 
         lgbtn = new JButton("Login");
-        lgbtn.setBounds(45, 140, 130, 60);
+        lgbtn.setBounds(170, 140, 130, 60);
         lgbtn.setBackground(Color.orange);
         lgbtn.addActionListener(this);
 
         ftbtn = new JButton("Forget Pass");
-        ftbtn.setBounds(200, 140, 130, 60);
+        ftbtn.setBounds(400, 140, 130, 60);
         ftbtn.setBackground(Color.orange);
         ftbtn.addActionListener(this);
 
         sgbtn = new JButton("SignUp");
-        sgbtn.setBounds(45, 240, 130, 60);
+        sgbtn.setBounds(170, 240, 130, 60);
         sgbtn.setBackground(Color.orange);
         sgbtn.addActionListener(this);
 
         exbtn = new JButton("Exit");
-        exbtn.setBounds(200, 240, 130, 60);
+        exbtn.setBounds(400, 240, 130, 60);
         exbtn.setBackground(Color.orange);
         exbtn.addActionListener(this);
 
         img = new ImageIcon("user.png");
 		imgLabel1 = new JLabel(img);
-		imgLabel1.setBounds(3, 11, 100, 100);
+		imgLabel1.setBounds(110, 11, 100, 100);
 
         img = new ImageIcon("lock.png");
 		imgLabel2 = new JLabel(img);
-		imgLabel2.setBounds(3, 40, 100, 100);
+		imgLabel2.setBounds(110, 40, 100, 100);
 
 
         frame.add(imgLabel1);
@@ -80,6 +80,7 @@ public class Login_Page extends JFrame implements ActionListener {
         frame.setBackground(Color.orange);
         frame.setLayout(null);
         frame.setVisible(true);
+        frame.setBounds(400,  200, 700, 500);
     }
 
     public void actionPerformed(ActionEvent e) {
