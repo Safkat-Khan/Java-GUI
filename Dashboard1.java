@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import static javax.swing.JOptionPane.showMessageDialog;
-
 
 public class Dashboard1 extends JFrame {
     JComboBox combo;
@@ -11,9 +9,9 @@ public class Dashboard1 extends JFrame {
     ImageIcon img;
     JLabel imgLabel;
 
-    
     JButton nxbtn;
-    
+    JButton prvbtn;
+    JButton exbtn;
 
     Dashboard1() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,10 +42,18 @@ public class Dashboard1 extends JFrame {
 		imgLabel = new JLabel(img);
 		imgLabel.setBounds(10, 100, 250, 250);
 
-
         nxbtn = new JButton("Next");
-        nxbtn.setBounds(300, 300, 130, 60);
-        
+        nxbtn.setBounds(300, 150, 130, 60);
+        nxbtn.setBackground(Color.orange);
+
+        prvbtn=new JButton("Previous");
+        prvbtn.setBounds(300, 250, 130, 60);
+        prvbtn.setBackground(Color.orange);
+
+        exbtn=new JButton("Exit");
+        exbtn.setBounds(125, 380, 130, 60);
+        exbtn.setBackground(Color.orange);
+
 
 
         bg1 = new ButtonGroup();
@@ -64,6 +70,9 @@ public class Dashboard1 extends JFrame {
         f.add(rb2);
         f.add(rb3);
         f.add(rb4);
+        f.add(nxbtn);
+        f.add(exbtn);
+        f.add(prvbtn);
         f.add(imgLabel);
         f.setSize(500, 500);
         f.setLayout(null);
