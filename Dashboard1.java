@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.event.*;
 import java.awt.*;
 import static javax.swing.JOptionPane.showMessageDialog;
 
@@ -48,8 +47,7 @@ public class Dashboard1 extends JFrame {
 
         nxbtn = new JButton("Next");
         nxbtn.setBounds(300, 300, 130, 60);
-        //nxbtn.setBackground();
-       // nxbtn.addActionListener(this);
+        
 
 
         bg1 = new ButtonGroup();

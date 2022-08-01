@@ -90,7 +90,7 @@ public class Login_Page extends JFrame implements ActionListener {
 
             if (user.equals("safkat") && pass.equals("123")) {
                 frame.setVisible(false);
-                new LogInSucces();
+                new Dashboard1();
             } else {
                 showMessageDialog(null, "Invalid Username and password!");
             }
