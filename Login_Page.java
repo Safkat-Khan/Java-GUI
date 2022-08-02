@@ -11,18 +11,15 @@ public class Login_Page extends JFrame implements ActionListener {
     ImageIcon img;
     JLabel imgLabel1,imgLabel2;
 
-    JLabel label1;
-    JLabel label2;
+    JLabel label1,label2;
 
     JTextField tf1;
     JPasswordField pf1;
 
-    JButton lgbtn;
-    JButton ftbtn;
-    JButton sgbtn;
-    JButton exbtn;
+    JButton lgbtn,ftbtn,sgbtn,exbtn;
 
-    public Login_Page() {
+     Login_Page() {
+       // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame = new JFrame("LoginPage");
         label1 = new JLabel("Username :");
         label1.setBounds(190, 50, 150, 20);
@@ -90,13 +87,20 @@ public class Login_Page extends JFrame implements ActionListener {
             String user = tf1.getText();
             String pass = pf1.getText();
 
-            if (user.equals("safkat") && pass.equals("123")) {
+            if (user.equals(" ") && pass.equals(" ")) {
                 frame.setVisible(false);
                 new Dashboard1();
-            } else {
+            } 
+            else {
                 showMessageDialog(null, "Invalid Username and password!");
+            } 
+        }
+            if(e.getSource()==exbtn)
+            {
+                System.exit(0);
+            }
             }
 
+                
         }
-    }
-}
+    

@@ -37,14 +37,13 @@ public class Dashboard2 extends JFrame implements ActionListener{
 		if(e.getSource()==lgbtn)
         {  
             new Login_Page();
+            frm.setVisible(false);
         }  
-            if(e.getSource()==exbtn)
+            if(e.getSource()==lgbtn)
             {  
-                System.exit(0);
+                new Login_Page();
+                frm.setVisible(false);
+                //System.exit(0);
             }  
-            if(e.getSource()==prvbtn)
-            {  
-                new Dashboard1();
-            } 
             }
     }
